@@ -8,7 +8,8 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="FXML-LoginDemo.jar" size="26711" download="eager" />
+    <jar href="FXML-LoginDemo.jar" size="28965" download="eager" />
+    <jar href="lib\jfoenix-8.0.8.jar" size="2809069" download="eager" />
   </resources>
 <security>
   <all-permissions/>

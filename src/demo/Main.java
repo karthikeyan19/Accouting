@@ -82,7 +82,8 @@ public class Main extends Application {
     public boolean userLogging(String userId, String password){
         if (Authenticator.validate(userId, password)) {
             loggedUser = User.of(userId);
-            gotoProfile();
+            //gotoProfile();
+            gotoAddCustomer();
             return true;
         } else {
             return false;
@@ -93,7 +94,16 @@ public class Main extends Application {
         loggedUser = null;
         gotoLogin();
     }
-    
+    private void gotoAddCustomer(){
+       
+        try{
+            AddCustomerController addCustomer = (AddCustomerController) replaceSceneContent("AddCustomer.fxml");
+            addCustomer.setApp(this);
+        }catch(Exception ex){
+            Logger.getLogger(Main.class.getName()).log(Level.SEVERE,null,ex);
+        }
+      
+    }
     private void gotoProfile() {
         try {
             ProfileController profile = (ProfileController) replaceSceneContent("profile.fxml");

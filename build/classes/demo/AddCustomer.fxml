@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import demo.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="demo.AddCustomerController">
+   <children>
+      <Pane layoutX="32.0" layoutY="24.0" prefHeight="353.0" prefWidth="524.0">
+         <children>
+            <JFXButton fx:id="add_cus" buttonType="RAISED" layoutX="196.0" layoutY="266.0" ripplerFill="#c43e23" text="ADD CUSTOMER" textFill="#0d0d0d" />
+            <JFXTextField fx:id="tf_cust_name" labelFloat="true" layoutX="178.0" layoutY="24.0" promptText="Enter customer name" />
+            <JFXComboBox fx:id="cb_cust_country" editable="true" labelFloat="true" layoutX="178.0" layoutY="84.0" prefHeight="31.0" prefWidth="168.0" promptText="select country" />
+            <JFXTextField fx:id="tf_payment_term" labelFloat="true" layoutX="178.0" layoutY="144.0" promptText="Enter payment term" />
+            <NumberTextField fx:id="tf_deposit_percentage" labelFloat="true" layoutX="178.0" layoutY="208.0" promptText="Enter Deposit %" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
